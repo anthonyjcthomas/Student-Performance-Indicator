@@ -1,6 +1,6 @@
-# Custom exception that I made for whenver use use Try Catch blocks it will raise a custom exception.
+# Custom exception that I made for whenever I use Try Catch blocks it will raise a custom exception.
 import sys #sys modules provide vairous functions that are used to manipulate different parts of Python runtime environment.
-import logging
+from src.logger import logging 
 '''
 Whenever an exception gets raised I want to put out my own custom message.
 -exc_tb, tells us on which file the exception occurred. 
@@ -26,3 +26,4 @@ class CustomException(Exception):
     # Prints error message
     def __str__(self):
         return self.error_message
+
