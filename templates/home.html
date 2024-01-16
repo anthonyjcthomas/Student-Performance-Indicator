@@ -4,9 +4,6 @@
        <h1>Student Exam Performance Indicator</h1>
    
        <form action="{{ url_for('predict_datapoint')}}" method="post">
-        <h1>
-            <legend>Student Exam Performance Prediction</legend>
-        </h1>
         <div class="mb-3">
             <label class="form-label">Gender</label>
             <select class="form-control" name="gender" placeholder="Enter you Gender" required>
@@ -101,11 +98,11 @@
                 placeholder="Enter your Reading Score" min='0' max='100' />
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Predict your Math Score" required />
+            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}
+       The  prediction is {{results}}
     </h2>
    <body>
 </html>

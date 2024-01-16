@@ -37,7 +37,7 @@ from xgboost import XGBRegressor
 # Running the web app through terminal
 If it so interest you to clone this repo, you can run the web app by using 
 ```
-python app.py
+python application.py
 ```
 in the terminal, and type 
 ```
