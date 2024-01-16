@@ -3,24 +3,47 @@ Machine Learning robot I am building using python. I am going to analyze how stu
 
 # Life cycle of a Machine Learning Project
 * Understanding the problem
-* Data Collection
+* [Data Collection](notebook/data/stud.csv)
 * Data Checks 
 * [Exploratory Data Analysis](<notebook/Exploratory Data Analysis.ipynb>)
-* Data Pre-Processing
-* Model Training
+* Data Pre-Processing ([data_ingestion](src/components/data_ingestion.py),[data_transformation](src/components/data_transformation.py))
+* [Model Training](src/components/model_trainer.py)
 * Evaluate model
-* Push model
+* [Push Model](app.py)
 
 # Imported Data and Required Packages
+#### Basic Import
 ```
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt 
 import seaborn as sns
-import batplotlib.pyplot as plt
-%matplotlib inline
-import warningswarning
+```
+#### Modelling
+```
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor,AdaBoostRegressor
+from sklearn.svm import SVR
+from sklearn.linear_model import LinearRegression, Ridge,Lasso
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import train_test_split
+import warnings
+from xgboost import XGBRegressor
 ```
 
+# Running the web app through terminal
+If it so interest you to clone this repo, you can run the web app by using 
+```
+python app.py
+```
+in the terminal, and type 
+```
+http://127.0.0.1:5000/predictdata
+```
+in your web browser.
 # License
 This repository is licensed under the MIT License - see the [License.md](License.md) file for details.
 

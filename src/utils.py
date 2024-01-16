@@ -1,4 +1,3 @@
-# Common functions
 import os
 import sys
 
