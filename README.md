@@ -34,17 +34,45 @@ import warnings
 from xgboost import XGBRegressor
 ```
 
-# Running the web app through terminal
-If it so interest you to clone this repo, you can run the web app by using 
+# Installation
+To install and run my code, follow these steps in terminal:
+1. Clone the Repository:
+```
+git clone https://github.com/anthonyjcthomas/Student-Performance-Indicator.git
+```
+2. Navigate to Repository Directory:
+```
+cd Student-Performance-Indicator
+```
+3. Install Required Dependencies:
+```
+pip install -r requirements.txt
+```
+
+# Usage
+To use the Student Performance Indicator, follow these steps:
+1. Run the application:
 ```
 python application.py
 ```
-in the terminal, and type 
+2. Open your web browser and go to:
 ```
 http://127.0.0.1:5000/predictdata
 ```
-in your web browser.
+3. On the webpage, you will need to fill out the following information:
+* Gender
+* Race/Ethnicity
+* Parental Level of Education
+* Type of Lunch
+* Test Preparation Course
+* Writing Score
+* Reading Score
 # License
 This repository is licensed under the MIT License - see the [License.md](License.md) file for details.
+
+# Contact
+For any inquiries or further information, please contact Anthony Thomas
+* Email: anthonyjcthomas@gmail.com
+* Phone: 608-698-6333
 
 
